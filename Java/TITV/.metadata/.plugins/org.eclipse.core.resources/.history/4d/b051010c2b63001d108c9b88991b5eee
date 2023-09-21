@@ -1,0 +1,9 @@
+package java_59_Enum;
+
+public enum Month {
+	Thang_1,
+	Thang_2,
+	Thang_3,
+	Thang_4,
+	
+}

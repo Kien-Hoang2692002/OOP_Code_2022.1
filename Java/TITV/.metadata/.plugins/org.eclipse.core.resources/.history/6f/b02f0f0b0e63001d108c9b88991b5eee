@@ -1,0 +1,45 @@
+package java_58;
+
+import java.sql.Date;
+import java.util.Calendar;
+import java.util.concurrent.TimeUnit;
+
+public class Test {
+	public static void main(String[] args) {
+		
+		// Current time 
+		long t1 = System.currentTimeMillis();	
+		for (int i = 0; i < 3; i++) {
+			System.out.println("Test");
+		}
+		long t2 = System.currentTimeMillis();
+		
+		System.out.println("Time before run for: "+t1);
+		System.out.println("Time after run for: "+t2);
+		System.out.println("Time run for: "+(t2-t1));
+		System.out.println("Time run for: "+((t2-t1)/1000) + "s");
+	
+		// TimeUnit
+		
+		System.out.println("300 years = "+ TimeUnit.DAYS.toSeconds(300*365) + "s");
+		System.out.println("2h = "+ TimeUnit.HOURS.toSeconds(2) + "s");
+	
+		// Date
+		
+		Date d = new Date(System.currentTimeMillis());
+		System.out.println(d.getDate() + "/" + (d.getMonth()+1) +"/" + (d.getYear()+1900));
+		
+		// Calendar
+		
+		Calendar c = Calendar.getInstance();
+		System.out.println( c.get(Calendar.DATE)+"-"+(c.get(Calendar.MONTH)+1)+"-"+c.get(Calendar.YEAR));
+		
+		c.add(Calendar.HOUR, 30);
+		System.out.println(c.get(Calendar.DATE)+"-"+(c.get(Calendar.MONTH)+1)+"-"+c.get(Calendar.YEAR));
+		
+		c.add(Calendar.DATE,2);
+		System.out.println(c.get(Calendar.DATE)+"-"+(c.get(Calendar.MONTH)+1)+"-"+c.get(Calendar.YEAR));
+		
+		
+	}
+}

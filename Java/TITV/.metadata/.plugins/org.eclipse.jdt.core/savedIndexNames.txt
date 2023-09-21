@@ -1,0 +1,5 @@
+INDEX VERSION 1.131+D:\Java\TITV\.metadata\.plugins\org.eclipse.jdt.core
+3518028468.index
+1865797976.index
+530046514.index
+148556237.index
